@@ -98,4 +98,4 @@ position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_0ognu")
 
 [node name="CoyoteJumpTimer" type="Timer" parent="."]
-wait_time = 0.02
+wait_time = 0.15
