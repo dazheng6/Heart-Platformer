@@ -15,3 +15,4 @@ polygon = PackedVector2Array(0, 0, 16, 0, 16, 104, 48, 104, 80, 120, 104, 120, 1
 
 [node name="Player" parent="." instance=ExtResource("2_w78ye")]
 position = Vector2(40, 88)
+floor_snap_length = 3.0
