@@ -8,6 +8,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var coyote_jump_timer = $CoyoteJumpTimer
 
 func _physics_process(delta):
+	movement_data = load("res://DefaultMovementData.tres")
 	apply_gravity(delta)
 	handle_jump()
 	var input_axis = Input.get_axis("ui_left", "ui_right")
@@ -33,8 +34,8 @@ func handle_jump():
 			velocity.y = movement_data.jump_velocity / 2
 
 func handle_acceleration(input_axis, delta):
-		if input_axis != 0:
-			velocity.x = move_toward(velocity.x, movement_data.speed * input_axis, movement_data.acceleration * delta)
+	if input_axis != 0:
+		velocity.x = move_toward(velocity.x, movement_data.speed * input_axis, movement_data.acceleration * delta)
 
 func apply_friction(input_axis, delta):
 	if input_axis == 0:
