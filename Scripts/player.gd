@@ -80,6 +80,5 @@ func update_animations(input_axis):
 	if not is_on_floor():
 		animated_sprite_2d.play("jump")
 
-
 func _on_hazard_detector_area_entered(area):
 	global_position = starting_position
