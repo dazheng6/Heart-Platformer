@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d3ofcbr2mdxuj"]
+[gd_scene load_steps=8 format=3 uid="uid://d3ofcbr2mdxuj"]
 
 [ext_resource type="Texture2D" uid="uid://frfnc8qmcb2c" path="res://sprites/tileset.png" id="1_peyvb"]
 [ext_resource type="Texture2D" uid="uid://7hp5rpqsl6bu" path="res://sprites/slopes.png" id="2_in2fb"]
+[ext_resource type="Texture2D" uid="uid://chwqgn5ysb277" path="res://sprites/slopes_flipped.png" id="3_baesl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_emiwx"]
 resource_name = "autotile"
@@ -477,7 +478,7 @@ texture = ExtResource("2_in2fb")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 7, 9.125, -8.375, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, -8, 8, 8, 8, 8, -8, 8)
 1:0/0 = 0
 1:0/0/terrain_set = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -490,11 +491,11 @@ texture = ExtResource("2_in2fb")
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
-3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 7, 8, 0.5, 8, 8, -8, 8)
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, 0.0883884, 8, 8, 8, 8, -8, 8)
 4:0/0 = 0
 4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:0/0/physics_layer_0/angular_velocity = 0.0
-4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.125, 8, -8, 8, 8, -8, 8)
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.0883884, 8, -8, 8, 8, 8, 8, -8, 8)
 5:0/0 = 0
 5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:0/0/physics_layer_0/angular_velocity = 0.0
@@ -504,6 +505,37 @@ texture = ExtResource("2_in2fb")
 6:0/0/physics_layer_0/angular_velocity = 0.0
 6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7yp3e"]
+texture = ExtResource("3_baesl")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, 0, 8, 8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, 8, 8, 8, 8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, 8, 8, 8, 8, 8, -8, 8)
+
 [sub_resource type="TileSet" id="TileSet_3sy5b"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 0
@@ -512,6 +544,7 @@ terrain_set_0/terrain_0/name = "autotile 0"
 terrain_set_0/terrain_0/color = Color(0.501961, 0.501961, 0.501961, 1)
 sources/1 = SubResource("TileSetAtlasSource_emiwx")
 sources/2 = SubResource("TileSetAtlasSource_fee6s")
+sources/4 = SubResource("TileSetAtlasSource_7yp3e")
 
 [node name="levelTileMap" type="TileMap"]
 tile_set = SubResource("TileSet_3sy5b")
