@@ -107,6 +107,9 @@ shape = SubResource("RectangleShape2D_0ognu")
 [node name="CoyoteJumpTimer" type="Timer" parent="."]
 wait_time = 0.1
 
+[node name="WallJumpTimer" type="Timer" parent="."]
+wait_time = 0.1
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(2.08165e-12, -20)
 zoom = Vector2(1.2, 1.2)
