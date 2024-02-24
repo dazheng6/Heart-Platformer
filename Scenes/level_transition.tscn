@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b42xkw66pkthw"]
 
-[ext_resource type="Script" path="res://Scenes/level_transition.gd" id="1_rmjvg"]
+[ext_resource type="Script" path="res://Scripts/level_transition.gd" id="1_rmjvg"]
 
 [sub_resource type="Animation" id="Animation_t0aja"]
 length = 0.001
@@ -71,4 +71,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 0)
